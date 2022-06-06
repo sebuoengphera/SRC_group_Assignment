@@ -1,0 +1,226 @@
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .building{
+        margin: 0px 165px;
+        
+    }
+    .wings{
+        border-radius: 50%;
+        width: 10%;
+        height: 10%;
+    }
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #a9a9a9;
+    }
+    a ,h1.logo{
+        color: #fff;
+        text-decoration: none;
+    }
+    .header{
+        background-color: #008000;
+      }
+      .checkbox{
+          color: #008000;
+      }
+      .header.checkbox{
+          display: none;
+      }
+    header ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #008000;
+    
+    }
+    header ul a{
+        display: flex;
+        outline: 1px solid transparent;
+        padding: 20px;
+        text-decoration: none;
+    }
+    .header .menu li {
+        clear: none;
+        max-height: none;
+        float: right;
+        transition: max-height .2s ease-out;  
+    }
+    /*home content*/
+#testimonials{
+    display:flex;
+    padding: 18px;
+    justify-content: space-between;
+}
+.first-pres,.second-pres, .third-pres{
+    border: 2px darkgray solid;
+    border-radius: 18px;
+    padding: 0px 18px;
+}
+.text{
+    padding-left:18px;
+    }
+.first-pres{
+    position: relative;
+    left: 5px;
+    border: 2px darkgray solid;
+    margin: 0px 20px;
+}
+h2,h4,.pres-1 a{
+    text-align: center;
+}
+.second-pres{
+    position: relative;
+    left: 90px;
+    border: 2px darkgray solid;
+    margin: 0px 20px;
+}
+.third-pres{
+    position: relative;
+    left: 100px;
+    border: 2px darkgray solid;
+    margin: 0px 20px;
+}
+
+header ul a:hover{
+    background-color: #36ff2f;
+}
+.pres-1{
+    background-color: #008000;
+    color: #000;
+}
+.pres-1:hover{
+    color: #36ff2f;
+}
+#content{
+
+    padding: 18px;
+    text-align: center;
+    color: #000;
+}
+
+.footer{
+    padding: 18px;
+    text-align: center;
+}
+    
+    /*----------------------------------- humberger menu ------------------------------------*/
+@media (max-width :700px) {
+     /*---------------------------------- home content---------------------------------------*/
+#testimonials{
+    display:block;
+    justify-content: space-between;
+    text-align: center;
+}
+.first-pres,.second-pres, .third-pres{
+    position: relative;
+    left: 5px;
+    border: 2px darkgray solid;
+    margin: 0px 20px;
+}
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #a9a9a9;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .header{
+        background-color: #008000;
+        box-shadow: 2px 2px 2px 0 #0000001a;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+    }
+    header ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #008000;
+    
+    }
+    header ul a{
+        display: block;
+        outline: 1px solid transparent;
+        padding: 20px;
+        border-right: 1px solid #aaa;
+        text-decoration: none;
+    }
+    header ul a:hover{
+        background-color: #36ff2f;
+    }
+    .header .logo{
+        float: left;
+        display: block;
+        font-size: 2em;
+        padding: 10px 20px;
+    
+    }
+    .header .menu li {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;  
+    }
+    .header .menu-icon{
+        padding: 28px 20px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
+    .header .menu-icon .nav-icon{
+        background-color: #333;
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+    .header .menu-icon .nav-icon::before{
+        background: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        top: 5px;
+    
+    }
+    .header .menu-icon .nav-icon::after{
+        background: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        top:-5px;
+    }
+    .header .menu-btn{
+        display: none;
+    }
+    .header .menu-btn:checked~.menu li {
+        max-height: 240px;
+    }
+    .header .menu-btn:checked~.menu li .menu-icon.nav-icon{
+        background: transparent;
+
+    }
+    .header .menu-btn:checked~.menu li.menu-icon.nav-icon::before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .header .menu-btn:checked~.menu-icon.nav-icon::after{
+        transform: rotate(-45deg);
+        top: 0;
+
+    }
+    
+}
+
